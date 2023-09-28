@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tsak10</title>
+    <script>
+        function displayCurrentDate() {
+            let currentDate = new Date();
+            let day = currentDate.getDate().toString().padStart(2, '0');
+            let month = (currentDate.getMonth() + 1).toString().padStart(2, '0');
+            let year = currentDate.getFullYear();
+            let formattedDate = day + "/" + month + "/" + year;
+
+            let dateElement = document.getElementById("dateDisplay");
+            dateElement.innerHTML = " " + formattedDate;
+        }
+
+        function displayCurrentTime() {
+            let currentTime = new Date();
+            let timeElement = document.getElementById("timeDisplay");
+            timeElement.innerHTML = "" + currentTime.toLocaleTimeString();
+        }
+    </script>
+</head>
+<body>
+    <h1>Current Date and Time</h1>
+
+    <button onclick="displayCurrentDate()">Show Date</button>
+    <button onclick="displayCurrentTime()">Show Time</button>
+
+    <div id="dateDisplay"></div>
+    <div id="timeDisplay"></div>
+</body>
+</html>

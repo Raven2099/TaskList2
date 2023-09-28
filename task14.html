@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 14</title>
+    <style>
+        
+        body {
+  background-image: url('background.jpg');
+}
+.container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 80vh;
+        
+    }
+h1 {
+        color: rgb(40, 2, 194);
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+        padding-bottom: 0%;
+    }
+
+    .regform {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 600px;
+        color: rgb(255, 255, 255);
+        font-size: 18px;
+        font-family: sans-serif;
+        padding-top: 10px;
+    }
+
+.regform input,
+.regform select,
+.regform textarea {
+  border: none;
+  padding: 5px;
+  margin-top: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+.regform .submit {
+  width: 100%;
+  padding: 8px 0;
+  font-size: 20px;
+  color: rgb(44, 44, 44);
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.regform .submit:hover {
+    background-color: bisque;
+  opacity: 0.7;
+}
+
+.center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        textarea {
+            box-sizing: border-box;
+            width: 80%;
+        }
+        input[type="text"] {
+            width: 80%;
+            box-sizing: border-box;
+        }
+        input[type="email"] {
+            width: 80%;
+            box-sizing: border-box;
+        }
+        input[type="password"] {
+            width: 80%;
+            box-sizing: border-box;
+        }
+        input[type="number"] {
+            width: 80%;
+            box-sizing: border-box;
+        }
+        .button {
+      text-align: center;
+    }
+
+    .submit {
+      color: white;
+      background: #650505;
+      padding: 9px 25px;
+      margin-right: 10px;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0 0 5px #c9c9c9;
+    }
+    small{
+        text-align: right;
+    
+        color: #b70f0f;
+    }
+
+    
+    </style>
+    
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <div class="container">
+        <form id="signup" class="form">
+            <div class="form-field">
+                <table width="100%" class="center">
+                    <tr>
+                        <th><label for="username">First Name:</label></th>
+                        <td><input type="text" size="50%" name="username" id="username" autocomplete="off"><small></small></td>
+                    </tr>
+                    <tr>
+                        <th><label for="lname">Last Name:</label></th>
+                        <td><input type="text" size="100%" name="lname" id="lname" autocomplete="off"><small></small></td>
+                    </tr>
+                    
+                    <tr>
+                        <th><label for="email">Email:</label></th>
+                        <td><input type="text" name="email" id="email" autocomplete="off"><small></small></td>
+                    </tr>
+
+
+                    <tr>
+                        <th><label for="password">Password:</label></th>
+                        <td><input type="password" name="password" id="password" autocomplete="off">
+                            <small></small></td>
+                    </tr>
+
+                    <tr>
+                        <th><label for="confirm-password">Re-enter Password</label></th>
+                        <td><input type="password" name="confirm-password" id="confirm-password" autocomplete="off">
+                            <small></small></td>
+                    </tr>
+
+                    <tr>
+                        <th>Gender</th>
+                        <td>
+                            <label>Male<input type="radio" name="genderChoice" value="gender"></label><br>
+                            <label>Female<input type="radio" name="genderChoice" value="gender"></label>
+                        </td>
+                    </tr>
+                    
+
+                    <tr>
+                        <th><label for="age">Age:</label></th>
+                        <td><input type="number" size="100%" name="age" id="age" autocomplete="off"><small></small></td>
+                    </tr>
+
+                    <tr>
+                        <th><label for="pno">Phone Number :</label></th>
+                        <td><input type="number" size="50%" name="pno" id="pno" autocomplete="off"><small></small></td>
+                    </tr>
+
+                    
+                    
+                    <tr>
+                        <th><label for="Address">Address:</label></th>
+                        <td>
+                            <textarea rows="7px" cols="100%" name="Address" id="Address" autocomplete="off"></textarea><small></small>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <th><label for="state">State :</label></th>
+                        <td><input type="text" size="50%" name="state" id="state" autocomplete="off"><small></small></td>
+                    </tr>
+
+
+
+                    <tr>
+                        <th>Country</th>
+                        <td>
+                            <select name="Country">
+                                <option value="" disabled selected>Choose your Country</option>
+                                <option value="Australia">Australia</option>
+                                <option value="Belgium">Belgium</option>
+                                <option value="Croatia">Croatia</option>
+                                <option value="Denmark">Denmark</option>
+                                <option value="India">India</option>
+                                <option value="NewZealand">New Zealand</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Langauges Known</th>
+                        <td>
+                            <label>
+                            <input type="checkbox" name="engsel" value="English">English
+                            </label>
+                            <label>
+                            <input type="checkbox" name="kansel" value="Kannada">Kannada
+                            </label>
+                            <label>
+                            <input type="checkbox" name="hinsel" value="Hindi">Hindi
+                            </label>
+                            <label>
+                            <input type="checkbox" name="telsel" value="Telugu">Telugu
+                            </label>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <table  width="100%" class="center">
+                <tr>
+                    <td>&nbsp&nbsp
+                        <input type="checkbox" name="check" value="true1" size="100%"> &nbsp&nbspHereby I declare all the given details are true
+                    </td>
+                </tr>
+            </table>
+            <table  width="100%" class="center">
+                <tr>
+                    <td align="right">
+                        Log in to <a href="https://ethnus.com">Ethnus</a> website
+                    </td></tr>
+                
+            </table>
+
+            <div class="button">
+                <button type="submit" class="submit">Register</button>
+            </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

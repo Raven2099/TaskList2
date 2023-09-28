@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>task5</title>
+  <script src="octaValidate/src/validate.js"></script>
+  <script src="https://unpkg.com/octavalidate@latest/native/validate.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.css">
+  <style>
+    body {
+      font-family: arial;
+      transition: all 0.5s ease;
+    }
+
+    .container {
+      padding: 40px;
+      width: 500px;
+      margin: 20px auto;
+      background-color: #f1f1f157;
+    }
+
+    .container h2 {
+      text-align: center;
+    }
+
+    fieldset {
+      border: 1px solid #d4d4d43c;
+      padding: 20px 10px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+
+    .input-field {
+      display: flex;
+      margin-bottom: 15px;
+    }
+
+    label {
+      margin-right: 25px;
+      margin-top: 5px;
+      width: 30%;
+      text-align: right;
+      font-weight: bold;
+    }
+
+    .icon {
+      background: #fcfcfa24;
+      color: rgb(0, 0, 0);
+      min-width: 40px;
+      border: 2px solid #e2e2e2;
+      border-right: none;
+      text-align: center;
+      padding: 7px;
+    }
+
+    .inputs {
+      padding: 3px 10px;
+      border: 2px solid #e2e2e2;
+      width: 70%;
+    }
+
+    input [type="radio"] {
+      margin-right: 8px;
+    }
+
+    .textarea {
+      padding: 8px;
+      border: 2px solid #e2e2e2;
+    }
+
+    .textarea-icon {
+      padding-top: 14px;
+    }
+
+    .button {
+      text-align: center;
+    }
+
+    .submit {
+      color: white;
+      background: #ee9a25;
+      padding: 9px 25px;
+      margin-right: 10px;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0 0 5px #c9c9c9;
+    }
+
+    .submit:hover {
+      background: #d1871e;
+    }
+
+    .reset {
+      color: white;
+      background: #c93232;
+      padding: 9px 25px;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0 0 5px #c9c9c9;
+    }
+
+    .reset:hover {
+      background: #a32727;
+    }
+
+    .city {
+      margin-left: -6px;
+    }
+
+    .gender {
+      margin-left: -30px;
+    }
+
+    .courses {
+      margin-left: -26px;
+    }
+
+    input[type="radio"] {
+      margin-right: 10px;
+    }
+
+    .message {
+      margin-left: -30px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <form action="">
+      <fieldset>
+        <div class="input-field">
+          <label for="username">First Name</label>
+          <i class="fa fa-user icon"></i>
+          <input type="text" class="inputs" name="username">
+          <small></small>
+        </div>
+        <div class="input-field">
+          <label>Last Name</label>
+          <i class="fa fa-user icon"></i>
+          <input type="text" class="inputs" name="usrname">
+        </div>
+        <div class="input-field">
+          <label>Email</label>
+          <i class="fa fa-envelope icon"></i>
+          <input type="email" class="inputs">
+        </div>
+        <div class="input-field">
+            <label>Phone No</label>
+            <i class="fa fa-phone icon"></i>
+            <input type="number" class="inputs">
+          </div>
+        <div class="input-field">
+          <label>Address</label>
+          <i class="fa fa-home icon"></i>
+          <input type="text" class="inputs">
+        </div>
+        <div class="input-field">
+            <label>City</label>
+            <i class="fa fa-home icon"></i>
+            <input type="text" class="inputs">
+          </div>
+        <div class="input-field">
+            <label class="city">State</label>
+            <i class="fa fa-list icon"></i>
+            <select name="state" id="" class="inputs">
+              <option value="0">Select State</option>
+              <option value="1">Kerala </option>
+              <option value="2">Tamil Nadu </option>
+              <option value="3">Karnataka </option>
+              <option value="4">Maharashtra </option>
+            </select>
+        </div>
+
+        <div class="input-field">
+            <label class="gender">Do you have hosting?</label>
+            <input type="radio" name="gender" value="male"><br>Yes
+            <input type="radio" name="gender" value="female"><br>No
+          </div>
+
+
+        <div class="input-field">
+          <label class="message">Project Description</label>
+          <i class="fa-solid fa-pen icon textarea-icon"></i>
+          <textarea class="textarea"></textarea>
+        </div>
+        
+      
+      <div class="button">
+        <button type="submit" class="submit">Send<i class="fa-solid fa-paper-plane"></i></button>
+        
+      </div>
+    </form>
+  </div>
+  
+</body>
+
+</html>

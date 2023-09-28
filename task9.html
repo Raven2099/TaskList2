@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 9</title>
+    <script>
+        function mult() {
+            let num1 = parseFloat(document.getElementById("num1").value);
+            let num2 = parseFloat(document.getElementById("num2").value);
+
+            let mres = num1 * num2;
+
+            document.getElementById("mres").innerHTML = "The result is: " + mres;
+        }
+
+        function division() {
+            let num1 = parseFloat(document.getElementById("num1").value);
+            let num2 = parseFloat(document.getElementById("num2").value);
+
+            let divres = num1 / num2;
+
+            document.getElementById("divres").innerHTML = "The result is: " + divres;
+        }
+    </script>
+</head>
+<body>
+    <label for="num1">1st Number:</label>
+    <input type="text" id="num1"><br><br>
+
+    <label for="num2">2nd Number:</label>
+    <input type="text" id="num2"><br><br>
+
+    <button onclick="mult()">Multiply</button>
+    <button onclick="division()">Divide</button>
+
+    <div id="results">
+        <div id="mres"></div>
+        <div id="divres"></div>
+    </div>
+</body>
+</html>
